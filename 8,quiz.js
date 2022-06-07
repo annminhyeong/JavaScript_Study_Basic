@@ -14,3 +14,5 @@ console.log(idArr);
 setInterval(() => {
   console.log(new Date().toString());
 }, 1000);
+
+//main
