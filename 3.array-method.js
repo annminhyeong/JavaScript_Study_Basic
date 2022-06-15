@@ -41,3 +41,49 @@ console.log(fruits, deleteItem);
 //중간 추가
 fruits.splice(1, 0, '🍓', '🥝');
 console.log(fruits);
+
+//새로운 배열을 만듦
+
+//slice(form,to) :from부터 to까지 짜름, to는 포함안됨
+let newArr = fruits.slice(0, 2);
+console.log(newArr);
+newArr = fruits.slice();
+console.log(newArr);
+
+//concat() : 여러개의 배열을 이어줌
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = arr1.concat(arr2);
+console.log(arr3);
+
+//reverse() : 기존의 배열을 거꾸로
+const arr4 = arr3.reverse();
+console.log(arr4);
+
+console.clear();
+//flat() : 중첩된 배열을 하나의 배열로 쫙 펴기
+let arr = [
+  [1, 2, 3],
+  [4, [5, 6]],
+];
+console.log(arr);
+console.log(arr.flat());
+console.log(arr.flat(2));
+arr = arr.flat(2);
+
+//fill(채울값, from, to, ): 특정한값으로 배열 채우기 (배열자체를 바꿈)
+arr.fill(0);
+console.log(arr);
+
+arr.fill('a', 1, 3);
+console.log(arr);
+
+arr.fill('a', 5);
+console.log(arr);
+
+//join('구분자') : 배열를 문자열로 합치기
+let text = arr.join();
+console.log(text);
+
+text = arr.join(' ');
+console.log(text);
