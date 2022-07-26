@@ -1,0 +1,17 @@
+{
+  "name": "18.babel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -wo  build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9"
+  }
+}
